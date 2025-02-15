@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Allergifind" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/dark</item>
+        <item name="colorPrimaryVariant">@color/dark</item>
+        <item name="android:statusBarColor">@color/light</item>
+
+    </style>
+    <style name="Theme.BottomNavigation" parent="Theme.BottomNavigation" tools:ignore="ResourceCycle" />
+    <style name="App.Custom.Indicator" parent="ShapeAppearance.Material3.NavigationBarView.ActiveIndicator">
+        <item name="android:color">@color/yellow</item>
+    </style>
+
+    <style name="Theme.Allergifind" parent="Base.Theme.Allergifind" />
+</resources>

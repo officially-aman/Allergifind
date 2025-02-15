@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.BarcodeFragment">
+
+    <!-- PreviewView for Camera Feed -->
+    <androidx.camera.view.PreviewView
+        android:id="@+id/viewFinder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Overlay for controls at the bottom -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:background="@android:color/white"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/ingredientImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="Ingredient Image"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- TextView inside ScrollView to display extracted barcode text -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <TextView
+                android:id="@+id/barcodeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="50dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:background="@android:color/white"
+                android:text="Extracted text will appear here..."
+                android:scrollbars="vertical" />
+        </ScrollView>
+
+        <!-- Capture Button -->
+        <ImageButton
+            android:id="@+id/barcode_cap"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            android:src="@drawable/camera"
+            android:contentDescription="Camera"
+            android:layout_marginTop="8dp"
+            app:tint="@android:color/black" />
+    </LinearLayout>
+</FrameLayout>
+
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".Fragment.BarcodeFragment">-->
+
+<!--    &lt;!&ndash; PreviewView for Camera Feed &ndash;&gt;-->
+<!--    <androidx.camera.view.PreviewView-->
+<!--        android:id="@+id/viewFinder"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent" />-->
+
+<!--    &lt;!&ndash; Overlay for controls at the bottom &ndash;&gt;-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_gravity="bottom"-->
+<!--        android:background="@android:color/white"-->
+<!--        android:padding="8dp">-->
+
+<!--        &lt;!&ndash; TextView inside ScrollView to display extracted barcode text &ndash;&gt;-->
+<!--        <ScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:fillViewport="true">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/barcodeText"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:padding="16dp"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textColor="@android:color/black"-->
+<!--                android:background="@android:color/white"-->
+<!--                android:text="Extracted text will appear here..."-->
+<!--                android:scrollbars="vertical" />-->
+<!--        </ScrollView>-->
+
+<!--        &lt;!&ndash; Capture Button &ndash;&gt;-->
+<!--        <ImageButton-->
+<!--            android:id="@+id/barcode_cap"-->
+<!--            android:layout_width="56dp"-->
+<!--            android:layout_height="56dp"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:background="@android:color/transparent"-->
+<!--            android:src="@drawable/camera"-->
+<!--            android:contentDescription="Camera"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            app:tint="@android:color/black" />-->
+<!--    </LinearLayout>-->
+<!--</FrameLayout>-->

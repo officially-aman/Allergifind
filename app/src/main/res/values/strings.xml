@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Allergifind</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="onboarding_image">Hello</string>
+    <string name="image_desc">Hii</string>
+    <string name="title_activity_home">Home_Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="app_intro_text">Welcome to Allergifind! Our app helps you discover ingredient details from various packet snacks. Simply scan or search for your product to get detailed information about allergens and other ingredients.</string>
+    <string name="app_logo">Allergified Logo</string>
+</resources>
